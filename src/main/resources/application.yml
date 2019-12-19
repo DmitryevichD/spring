@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    platform: POSTGRESQL
+    url: jdbc:postgresql://localhost:5432/test_database
+    username: openbank
+    password: openbank
